@@ -89,7 +89,7 @@
 }
 
 
-.button-light {
+.btn-light {
     padding: 12px 24px;
     text-decoration: none;
     font-family: 'quicksand', sans-serif;
@@ -102,12 +102,66 @@
     display: inline-block;
 }
 
-.button-light:hover {
+.btn-light:hover {
     background-color: var(--accent-color2) !important;
 }
 
+/* Sektion 2 - Indhold og billeder */
+
+.sektion2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 112px 64px;
+    gap: 3rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+}
+
+.container {
+    display: inline;
+    padding: 0 80px;
+}
+
+.text-content h1 {
+    margin-bottom: 1rem;
+    line-height: 60px;
+    margin-top: 4rem;
+}
+
+.text-content p {
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.text-content {
+    display: column;
+    text-align: left; /* Justerer tekst til venstre */
+    flex: 1; /* Gør at tekstindholdet kan strække sig */
+    max-width: 500px; /* Begrænser bredden af tekstindholdet */
+}
+
+.image-content {
+    flex: 1; /* Gør at billedet kan strække sig */
+    text-align: right; /* Justerer billedet til højre */
+
+}
+
+.image-content img {
+    padding: 0 0px;
+    max-width: 50%;
+    height: 50%; /* Bevarer billedets proportioner */
+  
+}
+
+.btn-blue {
+    
+}
+
+
+/* Responsiv design */
+
 @media (max-width: 768px) {
-  .hero-content {
+  .sektion1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -115,3 +169,13 @@
     width: 90%;
   }
 }
+
+  .sektion2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }

@@ -37,6 +37,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 32px;
     font-weight: 700;
+    line-height: 35px;
     color: #3C3D36;
   }
 
@@ -44,13 +45,33 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 700;
+    line-height: 35px;
     color: #3C3D36;
   }
 
-  body {
+  p {
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 35px;
     color: #3C3D36;
   }
+
+  buttons, .btn-blue {
+  background-color: var(--accent-color1); /* #769DC0 */
+  color: var(--btn-color); /* #fff */
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+buttons:hover, .btn-blue:hover {
+  background-color: var(--accent-color2); /* #F9F6E8 */
+    color: var(--text-color); /* #3C3D36 */
+}
