@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column; /* Gør containeren til en kolonne */
     
-    align-items: center; /* Centrerer indholdet horisontalt */
+    align-items: left; 
     justify-content: center; /* Centrerer indholdet vertikalt */
     align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
     padding-top: 20px; /* Tilføjer top-padding for at give plads til headeren */
@@ -40,13 +40,14 @@
 .container-sektion1 h1 {
     line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
     text-align: left;
-    margin-bottom: 1rem; /* Tilføjer mellemrum under overskriften */
+    margin: 1rem 10rem; /* Tilføjer mellemrum til venstre */
+    
 }
 
 .container-sektion1 p {
     line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
     text-align: left;
-    margin-bottom: 2rem; /* Tilføjer mellemrum under teksten */
+    margin-left: 10rem; /* Tilføjer mellemrum til venstre */
     max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
 }
 
@@ -99,7 +100,7 @@
     background-color: #fff !important;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     text-align: center;
-    display: inline-block;
+    display: column;
 }
 
 .btn-light:hover {
@@ -109,23 +110,32 @@
 /* Sektion 2 - Indhold og billeder */
 
 .sektion2 {
-    display: flex;
-    justify-content: space-between;
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
     padding: 112px 64px;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
 
 }
 
 .container {
-    display: inline;
-    padding: 0 80px;
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 100%;
+    margin: 0 auto; /* Centrerer containeren horisontalt */
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 100px; /* Tilføjer mellemrum mellem tekst og billede */
 }
 
 .text-content h1 {
     margin-bottom: 1rem;
     line-height: 60px;
-    margin-top: 4rem;
 }
 
 .text-content p {
@@ -148,13 +158,9 @@
 
 .image-content img {
     padding: 0 0px;
-    max-width: 50%;
-    height: 50%; /* Bevarer billedets proportioner */
+    max-width: 100%; /* Begrænser bredden af billedet */ 
+    height: 100%; /* Bevarer billedets proportioner */
   
-}
-
-.btn-blue {
-    
 }
 
 
@@ -177,5 +183,5 @@
 
   .text-content,
   .image-content {
-    max-width: 100%;
+    min-width: 400px; /* Sikrer at tekst og billede ikke bliver for smalle */
   }

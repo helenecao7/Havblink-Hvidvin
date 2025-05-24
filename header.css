@@ -21,7 +21,7 @@ header {
 }
 
 .logo img {
-    height: 40px; /* Juster højden på logoet */
+    height: 50px; /* Juster højden på logoet */
     display: block; /* Sørger for at billedet ikke har ekstra plads omkring sig */
 
 }
@@ -58,11 +58,11 @@ nav {
 }
 
 .burger-label {
-  display: none;
+  display: hidden;
   font-size: 1.5rem;
   color: #3C3D36; /* Mørkegrå farve for bedre kontrast */
   cursor: pointer;
-  margin-left: 1rem; /* Placerer burgerikonet til venstre */
+  margin-bottom: 1rem; /* Placerer burgerikonet til venstre */
 }
 
 .nav-links {
@@ -70,7 +70,7 @@ nav {
   display: flex;
   gap: 1.5rem;
   margin: 0;
-  padding: 0;
+  padding: 2rem 0rem;
   align-items: center;
 }
 
@@ -146,6 +146,8 @@ nav {
 
   .burger-toggle:checked ~ .nav-links {
     display: flex;
+    justify-content: left;
+    align-items: center;
   }
 
   .nav-links li {
