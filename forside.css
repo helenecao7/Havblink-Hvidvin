@@ -6,3 +6,112 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Main image sektion */
+
+.sektion1 {
+    height: 100vh; /* Gør sektionen fuld højde */;
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    text-align: flex-start; /* Justerer tekst til venstre */
+    overflow: hidden
+
+} 
+
+.container-sektion1 {
+    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
+    height: 100vh;
+    width: 100%;
+    left: 0%; /* Justerer containeren til venstre */
+    display: flex;
+    flex-direction: column; /* Gør containeren til en kolonne */
+    
+    align-items: center; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
+    padding-top: 20px; /* Tilføjer top-padding for at give plads til headeren */
+    z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
+    background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
+
+}
+
+.container-sektion1 h1 {
+    line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: left;
+    margin-bottom: 1rem; /* Tilføjer mellemrum under overskriften */
+}
+
+.container-sektion1 p {
+    line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: left;
+    margin-bottom: 2rem; /* Tilføjer mellemrum under teksten */
+    max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
+}
+
+.image-container {
+    position: absolute; /* Gør at billedet kan placeres bag teksten */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
+
+
+}
+
+.sektion1-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sektion1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    display: block; /* Fjerner eventuelle mellemrum under billedet */
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+
+.button-light {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: 'quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color) !important;
+    background-color: #fff !important;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center;
+    display: inline-block;
+}
+
+.button-light:hover {
+    background-color: var(--accent-color2) !important;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+    width: 90%;
+  }
+}
