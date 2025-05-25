@@ -243,10 +243,15 @@
     padding-left: 80px;
 }
 
-.img-content4 {
-    max-width: fit-content;
-    height: 600px;
-    display: flex;
+.imag-content4 {
+    flex: 1; /* Gør at billedet kan strække sig */
+
+}
+
+.img-content4 img {
+    max-width: 100%; /* Begrænser bredden af billedet */ 
+    height: 600px; /* Bevarer billedets proportioner */
+  
 }
 
 .text-content4 {
@@ -254,6 +259,11 @@
     text-align: left; /* Justerer tekst til venstre */
     flex: 1; /* Gør at tekstindholdet kan strække sig */
     max-width: 500px; /* Begrænser bredden af tekstindholdet */
+}
+
+.text-content4 h1 {
+    margin-bottom: 0.5rem;
+    line-height: 60px;
 }
 
 /* sektion 5 - vores vine */
@@ -290,12 +300,12 @@
     display: flex;
     flex-direction: row; /* Gør at billederne er i en række */
     padding-top: 20px;
-    gap: 48px; /* Tilføjer mellemrum mellem tekst og billede */
+    gap: 100px; /* Tilføjer mellemrum mellem tekst og billede */
 }
 
 .img1 img, .img2 img, .img3 img {
     max-width: 100%; /* Begrænser bredden af billederne */
-    height: 380px; /* Bevarer billedets proportioner */
+    height: 400px; /* Bevarer billedets proportioner */
 }
 
 
