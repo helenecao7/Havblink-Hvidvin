@@ -24,6 +24,8 @@
     --btn-color: #fff; /* Hvid */
   }
 
+  /* Typografi */
+  
   h1 {
     font-family: 'Lora', serif;
     font-size: 45px;
@@ -57,14 +59,22 @@
     color: #3C3D36;
   }
 
+  /* Buttons */
+
   buttons, .btn-blue {
   background-color: var(--accent-color1); /* #769DC0 */
   color: var(--btn-color); /* #fff */
   font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;  
+  width: 130px;
+  text-align: center;
+
   border: none;
+  border-radius: 20px;
   padding: 12px 24px;
   cursor: pointer;
-  font-weight: 600;
+  
   text-decoration: none;
   display: inline-block;
   margin: 2rem 0rem;
@@ -72,7 +82,70 @@
 }
 
 .btn-light {
+  background-color: var(--btn-color); /* #fff */
+  color: var(--text-color); /* #3C3D36 */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+   width: 130px;
+  text-align: center;
+  
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-no-fill {
+  color: var(--btn-color); /* #fff */
+  background-color: transparent; /* Ingen baggrundsfarve */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  width: 130px;
+  text-align: center;
+  
+  border: 2px solid var(--btn-color); /* #fff */
+  /* Ingen fyldfarve */
+  border-radius: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0rem;
+  transition: background-color 0.3s ease;
+}
+
+.buttons:hover, .btn-blue:hover, .btn-light:hover {
+  background-color: var(--accent-color2); /* #F9F6E8 */
+    color: var(--text-color); /* #3C3D36 */
+}
+
+.btn-no-fill:hover {
+  background-color: var(--btn-color); /* #fff */
+  color: var(--text-color); /* #3C3D36 */
+}
+
+/* Buttons
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: left;
+    align-items: center;
+    margin: 2rem 15rem;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens 
+
+}
+
+.btn-light {
     padding: 12px 24px;
+    width: 130px;
     text-decoration: none;
     font-family: 'quicksand', sans-serif;
     font-size: 16px;
@@ -85,7 +158,6 @@
     justify-content: left;
 }
 
-.buttons:hover, .btn-blue:hover {
-  background-color: var(--accent-color2); /* #F9F6E8 */
-    color: var(--text-color); /* #3C3D36 */
-}
+.btn-light:hover {
+    background-color: var(--accent-color2) !important;
+} */

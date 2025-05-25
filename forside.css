@@ -80,36 +80,6 @@
     display: block; /* Fjerner eventuelle mellemrum under billedet */
 }
 
-/* Buttons */
-.buttons {
-    display: flex;
-    gap: 30px;
-    justify-content: left;
-    align-items: center;
-    margin: 2rem 15rem;
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-
-}
-
-.btn-light {
-    padding: 12px 24px;
-    width: 130px;
-    text-decoration: none;
-    font-family: 'quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-color) !important;
-    background-color: #fff !important;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    text-align: center;
-    display: inline-block;
-    justify-content: left;
-}
-
-.btn-light:hover {
-    background-color: var(--accent-color2) !important;
-}
-
 /* Sektion 2 */
 
 .sektion2 {
@@ -198,7 +168,7 @@
 }
 
 .text-content3 h1 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .content-images3 {
@@ -215,8 +185,8 @@
 
 .højre-margen {
    display: inline-block;
-    margin-left: 7rem; /* Tilføjer margen til højre */
-    margin-top: 2rem;
+   margin-left: 13rem; /* Tilføjer margen til højre */
+   margin-top: 2rem;
 }
 
 /* Sektion 4 - hvidvin fordele */
@@ -308,6 +278,28 @@
     height: 400px; /* Bevarer billedets proportioner */
 }
 
+/* Sektion 6 - nyhedsbrev */
+.sektion6 {
+    background-color: #7D9A6C; /* Mørkegrøn*/
+    max-height: 60vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
+    padding: 100px 64px;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+}
+
+.text-content6 h1{
+    margin-bottom: 0.5rem;
+}
+
+.btn-content6 {
+    display: flex;
+    justify-content: center; /* Centrerer knapperne */
+    gap: 16px; /* Tilføjer mellemrum mellem knapperne */
+}
 
 
 /* Responsiv design */
