@@ -14,9 +14,8 @@
     display: flex;
     position: relative;
     align-items: center; /* Centrerer indholdet vertikalt */
-    justify-content: center; /* Centrerer indholdet horisontalt */
-    text-align: flex-start; /* Justerer tekst til venstre */
-    overflow: hidden
+    justify-content: left; /* Centrerer indholdet horisontalt */
+    overflow: hidden;
 
 } 
 
@@ -31,7 +30,7 @@
     align-items: left; 
     justify-content: center; /* Centrerer indholdet vertikalt */
     align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
-    padding-top: 20px; /* Tilføjer top-padding for at give plads til headeren */
+    padding: 112px 120px;/* Tilføjer luft i top og højre */
     z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
     background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
 
@@ -40,14 +39,15 @@
 .container-sektion1 h1 {
     line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
     text-align: left;
-    margin: 1rem 10rem; /* Tilføjer mellemrum til venstre */
+    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+
     
 }
 
 .container-sektion1 p {
     line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
     text-align: left;
-    margin-left: 10rem; /* Tilføjer mellemrum til venstre */
+    padding-left: 80px; /* Tilføjer mellemrum til venstre */
     max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
 }
 
@@ -83,12 +83,12 @@
 .buttons {
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 20px;
+    margin: 1rem 15rem;
     flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-}
 
+}
 
 .btn-light {
     padding: 12px 24px;
@@ -101,6 +101,7 @@
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     text-align: center;
     display: column;
+    justify-content: left;
 }
 
 .btn-light:hover {
@@ -115,7 +116,7 @@
     align-items: center;
    
     text-align: center;
-    padding: 112px 64px;
+    padding: 112px 120px;
     gap: 2rem;
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
 
@@ -125,41 +126,41 @@
     display: flex;
     max-width: 1200px; /* Begrænser bredden af containeren */
     height: 100%;
-    margin: 0 auto; /* Centrerer containeren horisontalt */
     flex-direction: row; /* Gør at indholdet er i en række */
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding-left: 80px;
     gap: 100px; /* Tilføjer mellemrum mellem tekst og billede */
 }
 
-.text-content h1 {
+.text-content2 h1 {
     margin-bottom: 1rem;
     line-height: 60px;
 }
 
-.text-content p {
+.text-content2 p {
     line-height: 30px;
     margin-bottom: 1.5rem;
 }
 
-.text-content {
+.text-content2 {
     display: column;
     text-align: left; /* Justerer tekst til venstre */
     flex: 1; /* Gør at tekstindholdet kan strække sig */
     max-width: 500px; /* Begrænser bredden af tekstindholdet */
 }
 
-.image-content {
+.image-content2 {
     flex: 1; /* Gør at billedet kan strække sig */
     text-align: right; /* Justerer billedet til højre */
+    padding-right: 0px;
 
 }
 
-.image-content img {
-    padding: 0 0px;
+.image-content2 img {
     max-width: 100%; /* Begrænser bredden af billedet */ 
     height: 100%; /* Bevarer billedets proportioner */
+    padding-left: 80px;
   
 }
 
@@ -178,10 +179,23 @@
 
   .sektion2 {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .text-content,
-  .image-content {
-    min-width: 400px; /* Sikrer at tekst og billede ikke bliver for smalle */
-  }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Gør at indholdet er i en kolonne */
+        align-items: center; /* Centrerer indholdet vertikalt */
+        text-align: center; /* Centrerer teksten */
+    }
+
+    .text-content2, .image-content2 {
+        max-width: 100%; /* Gør at indholdet kan strække sig */
+        text-align: center; /* Centrerer teksten */
+    }
+
+    .image-content2 img {
+        max-width: 100%; /* Gør at billedet kan strække sig */
+        height: auto; /* Bevarer billedets proportioner */
+    }
