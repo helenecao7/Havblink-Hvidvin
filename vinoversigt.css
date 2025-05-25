@@ -1,0 +1,187 @@
+/* vinoversigt.css */
+
+/* Generelle stilarter */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero sektion */
+
+.sektion1 {
+    height: 70vh; /* Gør sektionen fuld højde */;
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: left; /* Centrerer indholdet horisontalt */
+    overflow: hidden;
+
+} 
+
+.image-container {
+    position: absolute; /* Gør at billedet kan placeres bag teksten */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
+}
+
+
+.container-sektion1 {
+    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
+    height: 90vh;
+    width: 100%;
+    left: 0%; /* Justerer containeren til venstre */
+    display: flex;
+    flex-direction: column; /* Gør containeren til en kolonne */
+    
+    align-items: left; 
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
+    padding: 112px 120px;/* Tilføjer luft i top og højre */
+    z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
+    background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
+
+}
+
+.container-sektion1 h1 {
+    line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: left;
+    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    margin-bottom: 0.5rem;;
+
+    
+}
+
+.container-sektion1 p {
+    line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: left;
+    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
+}
+
+
+.sektion1-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sektion1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    display: block; /* Fjerner eventuelle mellemrum under billedet */
+}
+
+.btn-content {
+    display: flex;
+    justify-content: left; /* Centrerer knapperne */
+    gap: 16px; /* Tilføjer mellemrum mellem knapperne */
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */ 
+    flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
+}
+
+/* sektion2 - grid items*/
+.grid-sektion {
+    background-color: var(--tertiary-color); /* Lysere beige baggrund */
+    
+    min-height: 70vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: left;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+}
+
+.text-content2 {
+    display: flex;
+    flex-direction: column; /* Gør at teksten er i en kolonne */
+    align-items: left; /* Justerer teksten til venstre */
+    justify-content: center; /* Centrerer teksten vertikalt */
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+}
+
+.grid-items1 {
+    display: flex;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
+    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
+    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
+}
+
+.item {
+    flex: 1; /* Gør at hvert grid item kan strække sig */
+    background-color: var(--tertiary-color); /* Mørkere beige baggrund */
+    padding: 20px; /* Tilføjer luft inden i grid item */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge for dybde */
+    transition: transform 0.3s ease;
+
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Giver en let hævning ved hover */
+}
+
+.item img {
+    width: 100%; /* Gør at billedet fylder hele bredden af grid item */
+    height: 400px; /* Bevarer billedets proportioner */
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    margin-bottom: 20px; /* Tilføjer mellemrum under billedet */
+}
+
+.container-sektion2 {
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+    display: flex;
+    
+    
+}
+
+.grid-items2 {
+    display: flex;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
+    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
+    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
+}
+
+
+
+
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .grid-items1, .gridt-items2 {
+        padding: 20px; /* Mindre luft på mindre skærme */
+        flex-direction: column; /* Gør at indholdet er i en kolonne */
+        align-items: center; /* Centrerer indholdet horisontalt */
+    }
+
+    .container-sektion1 h1, .container-sektion1 p {
+        text-align: center; /* Centrerer teksten på mindre skærme */
+        padding-left: 0; /* Fjerner venstre padding */
+    }
+
+    .btn-content {
+        justify-content: center; /* Centrerer knapperne på mindre skærme */
+    }
+
+    .grid-sektion {
+        padding: 20px; /* Mindre luft på mindre skærme */
+    }
+
+    .text-content2 {
+        padding: 0px 20px; /* Mindre luft på mindre skærme */
+    }
+}

@@ -25,7 +25,7 @@
   }
 
   /* Typografi */
-  
+
   h1 {
     font-family: 'Lora', serif;
     font-size: 45px;
@@ -81,6 +81,7 @@
   transition: background-color 0.3s ease;
 }
 
+
 .btn-light {
   background-color: var(--btn-color); /* #fff */
   color: var(--text-color); /* #3C3D36 */
@@ -122,9 +123,29 @@
   transition: background-color 0.3s ease;
 }
 
-.buttons:hover, .btn-blue:hover, .btn-light:hover {
+ .btn-blue-long {
+  background-color: var(--accent-color1); /* #769DC0 */
+  color: var(--btn-color); /* #fff */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;  
+  width: 300px;
+  text-align: center;
+
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0rem;
+  transition: background-color 0.3s ease;
+}
+
+.buttons:hover, .btn-blue:hover, .btn-light:hover, .btn-blue-long:hover {
   background-color: var(--accent-color2); /* #F9F6E8 */
-    color: var(--text-color); /* #3C3D36 */
+  color: var(--text-color); /* #3C3D36 */
 }
 
 .btn-no-fill:hover {
