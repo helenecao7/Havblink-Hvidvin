@@ -26,24 +26,24 @@
 
   h1 {
     font-family: 'Lora', serif;
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 60px;
     color: #3C3D36;
 
   }
 
   h2 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 35px;
     color: #3C3D36;
   }
 
-    h3 {
+  h3 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 35px;
     color: #3C3D36;
@@ -71,7 +71,21 @@
   transition: background-color 0.3s ease;
 }
 
-buttons:hover, .btn-light:hover, .btn-blue:hover {
+.btn-light {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: 'quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color) !important;
+    background-color: #fff !important;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center;
+    display: inline-block;
+    justify-content: left;
+}
+
+.buttons:hover, .btn-light:hover, .btn-blue:hover {
   background-color: var(--accent-color2); /* #F9F6E8 */
     color: var(--text-color); /* #3C3D36 */
 }

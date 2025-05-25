@@ -40,6 +40,7 @@
     line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
     text-align: left;
     padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    margin-bottom: 1rem;;
 
     
 }
@@ -108,7 +109,7 @@
     background-color: var(--accent-color2) !important;
 }
 
-/* Sektion 2 - Indhold og billeder */
+/* Sektion 2 */
 
 .sektion2 {
     min-height: 70vh;
@@ -122,7 +123,7 @@
 
 }
 
-.container {
+.container-sektion2 {
     display: flex;
     max-width: 1200px; /* Begrænser bredden af containeren */
     height: 100%;
@@ -143,7 +144,7 @@
     margin-bottom: 1.5rem;
 }
 
-.text-content2 {
+.text-content2{
     display: column;
     text-align: left; /* Justerer tekst til venstre */
     flex: 1; /* Gør at tekstindholdet kan strække sig */
@@ -164,6 +165,54 @@
   
 }
 
+/* Sektion 3 - 3 grids */
+
+.sektion3 {
+    background-color: var(--tertiary-color); /* Lysere beige baggrund */
+    
+    min-height: 70vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: left;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+
+}
+
+.container-sektion3 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 100%;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+  
+}
+
+.text-content3 {
+    padding-left: 80px;
+}
+
+.content-images3 {
+    display: flex;
+    flex-direction: row; /* Gør at billederne er i en række */
+    padding-top: 20px;
+    gap: 48px; /* Tilføjer mellemrum mellem tekst og billede */
+}
+
+.image1 img, .image2 img, .image3 img {
+    max-width: 100%; /* Begrænser bredden af billederne */
+    height: 220px; /* Bevarer billedets proportioner */
+}
+
+.højre-margen {
+   display: inline-block;
+    margin-left: 7rem; /* Tilføjer margen til højre */
+    margin-top: 2rem;
+}
 
 /* Responsiv design */
 
