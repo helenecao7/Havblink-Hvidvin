@@ -40,7 +40,7 @@
     line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
     text-align: left;
     padding-left: 80px; /* Tilføjer mellemrum til venstre */
-    margin-bottom: 1rem;;
+    margin-bottom: 0.5rem;;
 
     
 }
@@ -86,13 +86,14 @@
     gap: 30px;
     justify-content: left;
     align-items: center;
-    margin: 1rem 15rem;
+    margin: 2rem 15rem;
     flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 
 }
 
 .btn-light {
     padding: 12px 24px;
+    width: 130px;
     text-decoration: none;
     font-family: 'quicksand', sans-serif;
     font-size: 16px;
@@ -101,7 +102,7 @@
     background-color: #fff !important;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     text-align: center;
-    display: column;
+    display: inline-block;
     justify-content: left;
 }
 
@@ -135,7 +136,7 @@
 }
 
 .text-content2 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 60px;
 }
 
@@ -196,6 +197,10 @@
     padding-left: 80px;
 }
 
+.text-content3 h1 {
+  margin-bottom: 0.5rem;
+}
+
 .content-images3 {
     display: flex;
     flex-direction: row; /* Gør at billederne er i en række */
@@ -213,6 +218,87 @@
     margin-left: 7rem; /* Tilføjer margen til højre */
     margin-top: 2rem;
 }
+
+/* Sektion 4 - hvidvin fordele */
+
+.sektion4 {
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+}
+
+.container-sektion4 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 100%;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.img-content4 {
+    max-width: fit-content;
+    height: 600px;
+    display: flex;
+}
+
+.text-content4 {
+    display: column;
+    text-align: left; /* Justerer tekst til venstre */
+    flex: 1; /* Gør at tekstindholdet kan strække sig */
+    max-width: 500px; /* Begrænser bredden af tekstindholdet */
+}
+
+/* sektion 5 - vores vine */
+.sektion5 {
+    background-color: var(--tertiary-color); /* Lysere beige baggrund */
+    
+    min-height: 70vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: left;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+
+}
+
+.container-sektion5 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 100%;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+  
+}
+
+.text-content5 {
+    padding-left: 80px;
+}
+
+.content-images5 {
+    display: flex;
+    flex-direction: row; /* Gør at billederne er i en række */
+    padding-top: 20px;
+    gap: 48px; /* Tilføjer mellemrum mellem tekst og billede */
+}
+
+.img1 img, .img2 img, .img3 img {
+    max-width: 100%; /* Begrænser bredden af billederne */
+    height: 380px; /* Bevarer billedets proportioner */
+}
+
+
 
 /* Responsiv design */
 
