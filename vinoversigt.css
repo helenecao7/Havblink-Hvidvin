@@ -115,7 +115,8 @@
     flex-direction: row; /* Gør at indholdet er i en række */
     justify-content: space-between; /* Fordeler pladsen mellem elementerne */
     margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
+    gap: 30px; /* Tilføjer mellemrum mellem elementerne i grid item */
+    align-items: flex-start;
 }
 
 .item {
@@ -154,7 +155,121 @@
     gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
 }
 
+/* sektion3 - smagsnuancer */
+.sektion3 {
+    background-color: var(--primary-color); /* beige baggrund */
+    
+    min-height: 80vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: left;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
 
+}
+
+.container-sektion3 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 100%;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+  
+}
+
+.text-content3 {
+    padding-left: 80px;
+}
+
+.content-images3 {
+    display: flex;
+    flex-direction: row; /* Gør at billederne er i en række */
+    padding-top: 20px;
+    gap: 100px; /* Tilføjer mellemrum mellem tekst og billede */
+}
+
+.img1 img, .img2 img, .img3 img {
+    max-width: 100%; /* Begrænser bredden af billederne */
+    height: 400px; /* Bevarer billedets proportioner */
+}
+
+/* sektion4 - kendetegn */
+.sektion4 {
+    background-color: var(--tertiary-color); /* lys beige baggrund */
+    
+    min-height: 130vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: center;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+}
+
+.text-container {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 100%;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    margin: 2rem 0; /* Tilføjer mellemrum over og under containeren */
+  
+}
+
+.img-content4 {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Gør at indholdet er i en kolonne */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    width: 100%; /* Gør at billedet fylder hele bredden af containeren */
+    align-items: center; 
+    text-align: center; /* Centrerer billedet */
+     
+}   
+
+.img-content4 img {
+    max-width: 100%; /* Begrænser bredden af billedet */
+    height: 600px; /* Bevarer billedets proportioner */
+    align-self: stretch; /* Gør at billedet strækker sig over hele bredden */
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    
+}
+    
+/* sektion5 - nyheder */
+.sektion5 {
+    background-color: var(--secondary-color); /* grøn baggrund */
+    
+    min-height: 100vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: left;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+}
+
+.text-content5 {
+    display: flex;
+    flex-direction: column; /* Gør at teksten er i en kolonne */
+    align-items: left; /* Justerer teksten til venstre */
+    justify-content: center; /* Centrerer teksten vertikalt */
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+}
+
+.produkt-navn {
+    display: flex;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
+    gap: 20px; /* Tilføjer mellemrum mellem elementerne*/
+}
 
 
 

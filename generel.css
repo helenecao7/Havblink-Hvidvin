@@ -9,13 +9,13 @@
   }
   
   body {
-    background-color: #F8F5E2; /* Lys beige */
+    background-color: #F8F5E2; /* Beige */
     color: #F8F5E2;
   }
   
   /* Farver fra forside.css */
   :root {
-    --primary-color: #F8F5E2; /* Lys beige */
+    --primary-color: #F8F5E2; /* Beige */
     --secondary-color: #7D9A6C; /* Mørkegrøn */
     --tertiary-color: #F9F6E8; /* Lysere beige */
     --accent-color1: #769DC0; /* Himmel blå */
@@ -28,9 +28,10 @@
 
   h1 {
     font-family: 'Lora', serif;
-    font-size: 45px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 60px;
+    margin-bottom: 0.5rem;
     color: #3C3D36;
 
   }
@@ -53,7 +54,7 @@
 
   p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     color: #3C3D36;
@@ -88,7 +89,7 @@
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 600;
-   width: 130px;
+  width: 130px;
   text-align: center;
   
   border: none;
@@ -139,6 +140,24 @@
   
   text-decoration: none;
   display: inline-block;
+  margin: 2rem 0rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-no-stroke {
+  background-color: transparent; /* Ingen baggrundsfarve */
+  border: none; /* Ingen kant */
+  color: var(--text-color); /* #3C3D36 */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 700;  
+  width: 300px;
+  text-align: left;
+  cursor: pointer;
+  
+  word-wrap: break-word; /* Gør at teksten kan brydes */
+  text-decoration: none;
+  display: inline-flex;
   margin: 2rem 0rem;
   transition: background-color 0.3s ease;
 }

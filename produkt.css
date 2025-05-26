@@ -1,0 +1,20 @@
+/* produkt.css */
+
+/* Generelle stilarter */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* produkt sektion */
+
+.sektion1 {
+    height: 100vh; /* Gør sektionen fuld højde */;
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: left; /* Centrerer indholdet horisontalt */
+    overflow: hidden;
+
+} 

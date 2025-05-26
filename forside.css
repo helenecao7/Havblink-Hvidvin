@@ -132,7 +132,7 @@
 .image-content2 img {
     max-width: 100%; /* Begrænser bredden af billedet */ 
     height: 100%; /* Bevarer billedets proportioner */
-    padding-left: 80px;
+    padding-left: 40px;
   
 }
 
