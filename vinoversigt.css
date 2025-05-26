@@ -201,7 +201,7 @@
 .sektion4 {
     background-color: var(--tertiary-color); /* lys beige baggrund */
     
-    min-height: 130vh;
+    min-height: 70vh;
     width: 100%;
     
     align-items: center;
@@ -221,25 +221,6 @@
     padding-left: 80px;
     margin: 2rem 0; /* Tilføjer mellemrum over og under containeren */
   
-}
-
-.img-content4 {
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Gør at indholdet er i en kolonne */
-    justify-content: center; /* Centrerer indholdet vertikalt */
-    width: 100%; /* Gør at billedet fylder hele bredden af containeren */
-    align-items: center; 
-    text-align: center; /* Centrerer billedet */
-     
-}   
-
-.img-content4 img {
-    max-width: 100%; /* Begrænser bredden af billedet */
-    height: 600px; /* Bevarer billedets proportioner */
-    align-self: stretch; /* Gør at billedet strækker sig over hele bredden */
-    object-fit: cover; /* Sørger for, at billedet dækker hele området */
-    
 }
     
 /* sektion5 - nyheder */

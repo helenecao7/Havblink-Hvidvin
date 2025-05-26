@@ -97,7 +97,7 @@
 .container-sektion2 {
     display: flex;
     max-width: 1200px; /* Begrænser bredden af containeren */
-    height: 100%;
+    height: 80vh;
     flex-direction: row; /* Gør at indholdet er i en række */
     align-items: center;
     justify-content: space-between;
@@ -141,7 +141,7 @@
 .sektion3 {
     background-color: var(--tertiary-color); /* Lysere beige baggrund */
     
-    min-height: 70vh;
+    min-height: 80vh;
     width: 100%;
     
     align-items: center;
@@ -192,7 +192,7 @@
 /* Sektion 4 - hvidvin fordele */
 
 .sektion4 {
-    min-height: 70vh;
+    min-height: 80vh;
     width: 100%;
     align-items: center;
    
@@ -206,7 +206,7 @@
 .container-sektion4 {
     display: flex;
     max-width: 1200px; /* Begrænser bredden af containeren */
-    height: 100%;
+    height: 80vh;
     flex-direction: row; /* Gør at indholdet er i en række */
     align-items: center;
     justify-content: space-between;
@@ -258,7 +258,7 @@
     flex-direction: row; /* Gør at indholdet er i en række */
     align-items: center;
     justify-content: space-between;
-    padding-left: 80px;
+    
   
 }
 
@@ -270,12 +270,20 @@
     display: flex;
     flex-direction: row; /* Gør at billederne er i en række */
     padding-top: 20px;
+    padding-left: 80px;
     gap: 100px; /* Tilføjer mellemrum mellem tekst og billede */
 }
 
 .img1 img, .img2 img, .img3 img {
     max-width: 100%; /* Begrænser bredden af billederne */
     height: 400px; /* Bevarer billedets proportioner */
+
+}
+
+.højre-margen1 {
+    display: inline-block;
+   margin-left: 11rem; /* Tilføjer margen til højre */
+   margin-top: 2rem;
 }
 
 /* Sektion 6 - nyhedsbrev */

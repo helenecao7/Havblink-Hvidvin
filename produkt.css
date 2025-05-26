@@ -18,3 +18,23 @@
     overflow: hidden;
 
 } 
+
+
+
+
+/* sektion2 - citat */
+
+.sektion2 {;
+    background-color: var(--secondary-color);
+    height: 40vh; 
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+}
+
+.container-sektion2 {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center; /* Centrerer teksten */
+}

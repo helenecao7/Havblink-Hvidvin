@@ -2,6 +2,7 @@
 
 header {
     background-color: var(--primary-color);
+    height: 70px; /* Fast højde for headeren */
     padding: 1rem;
     display: flex;
     justify-content: space-between; /* logo til venstre, nav til højre */
