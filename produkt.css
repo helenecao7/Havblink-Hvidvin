@@ -134,18 +134,73 @@
 /* sektion3 - slider */
 .sektion3 {
     background-color: var(--primary-color);
-    height: 70vh; /* Gør sektionen fuld højde */;
-    display: flex;
+
+    min-height: 70vh; /* Gør sektionen fuld højde */;
+    width: 100%;
+
     position: relative;
     align-items: center; /* Centrerer indholdet vertikalt */
     justify-content: center; /* Centrerer indholdet horisontalt */
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+}
+
+.tekst-knap {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Tilføjer mellemrum mellem tekst og knap */
+}
+
+.container-text3 {
+    display: flex;
+    flex-direction: column; /* Gør at teksten er i en kolonne */
+    align-items: left; /* Justerer teksten til venstre */
+    justify-content: center; /* Centrerer teksten vertikalt */
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+}
+
+.container-sektion3 {
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+    display: flex;
+        
+}
+
+.grid-items1 {
+    display: flex;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
+    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
+    gap: 30px; /* Tilføjer mellemrum mellem elementerne i grid item */
+    align-items: flex-start;
+}
+
+.item {
+    flex: 1; /* Gør at hvert grid item kan strække sig */
+    background-color: var(--tertiary-color); /* Mørkere beige baggrund */
+    padding: 20px; /* Tilføjer luft inden i grid item */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge for dybde */
+    transition: transform 0.3s ease;
 
 }
+
+.item:hover {
+    transform: translateY(-5px); /* Giver en let hævning ved hover */
+}
+
+.item img {
+    width: 100%; /* Gør at billedet fylder hele bredden af grid item */
+    height: 400px; /* Bevarer billedets proportioner */
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    margin-bottom: 20px; /* Tilføjer mellemrum under billedet */
+}
+
 
 
 /* sektion4 - oplev hvidvin */
 .sektion4 {
-    height: 70vh; /* Gør sektionen fuld højde */;
+    height: 60vh; /* Gør sektionen fuld højde */;
     display: flex;
     position: relative;
     align-items: center; /* Centrerer indholdet vertikalt */
@@ -165,7 +220,7 @@
 
 .container-sektion4 {
     position: relative; /* Gør at containeren kan placeres ovenpå billedet */
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     left: 0%; /* Justerer containeren til venstre */
     display: flex;

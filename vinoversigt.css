@@ -101,26 +101,29 @@
     gap: 2rem;
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
 }
-
 .text-content2 {
     display: flex;
     flex-direction: column; /* Gør at teksten er i en kolonne */
     align-items: left; /* Justerer teksten til venstre */
     justify-content: center; /* Centrerer teksten vertikalt */
     padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+
+}
+
+.container-sektion2 {
+    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
+    display: flex;
+    
 }
 
 .grid-items1 {
-    display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række */
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre kolonner af lige bredde */
+    grid-template-rows: repeat(2, auto); /* To rækker af lige højde */
     gap: 30px; /* Tilføjer mellemrum mellem elementerne i grid item */
-    align-items: flex-start;
 }
 
 .item {
-    flex: 1; /* Gør at hvert grid item kan strække sig */
     background-color: var(--tertiary-color); /* Mørkere beige baggrund */
     padding: 20px; /* Tilføjer luft inden i grid item */
     text-align: left;
@@ -140,20 +143,15 @@
     margin-bottom: 20px; /* Tilføjer mellemrum under billedet */
 }
 
-.container-sektion2 {
-    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
-    display: flex;
-    
-    
-}
 
-.grid-items2 {
+
+/* .grid-items2 {
     display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række */
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
-}
+    flex-direction: row; /* Gør at indholdet er i en række 
+    justify-content: space-between; /* Fordeler pladsen mellem elementerne 
+    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items 
+    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item 
+} */
 
 /* sektion3 - smagsnuancer */
 .sektion3 {
@@ -226,6 +224,7 @@
 .text-content4 {
     justify-content: center;
     text-align: center;
+
 }
 
 .text-content4 h1 {
