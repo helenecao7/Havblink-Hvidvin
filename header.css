@@ -59,7 +59,7 @@ nav {
 }
 
 .burger-label {
-  display: hidden;
+  display: none; /* Skjuler burgerikonet som standard */
   font-size: 1.5rem;
   color: #3C3D36; /* Mørkegrå farve for bedre kontrast */
   cursor: pointer;

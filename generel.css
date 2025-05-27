@@ -52,6 +52,14 @@
     color: #3C3D36;
   }
 
+   h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #3C3D36;
+  }
+
   p {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -124,6 +132,25 @@
   transition: background-color 0.3s ease;
 }
 
+.btn-no-fill1 {
+  color: var(--text-color); 
+  background-color: transparent; /* Ingen baggrundsfarve */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 64px;
+  text-align: left;
+  
+  border: 1px solid var(--text-color); 
+  /* Ingen fyldfarve */
+  padding: 12px;
+  cursor: pointer;
+  
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
  .btn-blue-long {
   background-color: var(--accent-color1); /* #769DC0 */
   color: var(--btn-color); /* #fff */
@@ -144,6 +171,46 @@
   transition: background-color 0.3s ease;
 }
 
+ .btn-blue-long1 {
+  background-color: var(--accent-color1); /* #769DC0 */
+  color: var(--btn-color); /* #fff */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;  
+  width: 500px;
+  text-align: center;
+
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+#btn-long {
+  background-color: transparent;
+  color: var(--text-color); 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;  
+  width: 500px;
+  text-align: center;
+
+  border: 1px solid var(--text-color); /* #3C3D36 */
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+
 .btn-no-stroke {
   background-color: transparent; /* Ingen baggrundsfarve */
   border: none; /* Ingen kant */
@@ -162,12 +229,12 @@
   transition: background-color 0.3s ease;
 }
 
-.buttons:hover, .btn-blue:hover, .btn-light:hover, .btn-blue-long:hover {
+.buttons:hover, .btn-blue:hover, .btn-light:hover, .btn-blue-long:hover, .btn-blue-long1:hover {
   background-color: var(--accent-color2); /* #F9F6E8 */
   color: var(--text-color); /* #3C3D36 */
 }
 
-.btn-no-fill:hover {
+.btn-no-fill:hover, #btn-long:hover {
   background-color: var(--btn-color); /* #fff */
   color: var(--text-color); /* #3C3D36 */
 }

@@ -10,6 +10,7 @@
 /* Main image sektion */
 
 .sektion1 {
+    position: relative; 
     height: 100vh; /* Gør sektionen fuld højde */;
     display: flex;
     position: relative;
@@ -19,10 +20,37 @@
 
 } 
 
-.container-sektion1 {
-    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
-    height: 100vh;
+.overlay {
+    position: absolute; /* Gør at billedet kan placeres bag teksten */
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
+    background-color: rgba(0, 0, 0, 0.4); /* lys grå med let gennemsigtighed */
+    z-index: 1; /* Sørger for at containeren er ovenpå baggrundsbilledet */
+    pointer-events: none; /* Gør at overlayet ikke forstyrrer klik på knapper */
+
+}
+
+.image-container,
+.sektion1-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Sørger for at billedet er bag teksten */
+}
+
+.sektion1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    display: block; /* Fjerner eventuelle mellemrum under billedet */
+}
+
+.container-sektion1 {
     left: 0%; /* Justerer containeren til venstre */
     display: flex;
     flex-direction: column; /* Gør containeren til en kolonne */
@@ -32,8 +60,9 @@
     align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
     padding: 112px 120px;/* Tilføjer luft i top og højre */
     z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
-    background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
-
+    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
+    
+    
 }
 
 .container-sektion1 h1 {
@@ -52,33 +81,10 @@
     max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
 }
 
-.image-container {
-    position: absolute; /* Gør at billedet kan placeres bag teksten */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
-
-
+.knap {
+    padding-left: 80px;
 }
 
-.sektion1-image {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.sektion1-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Sørger for, at billedet dækker hele området */
-    display: block; /* Fjerner eventuelle mellemrum under billedet */
-}
 
 /* Sektion 2 */
 
@@ -141,7 +147,7 @@
 .sektion3 {
     background-color: var(--tertiary-color); /* Lysere beige baggrund */
     
-    min-height: 80vh;
+    min-height: 70vh;
     width: 100%;
     
     align-items: center;
@@ -289,12 +295,12 @@
 /* Sektion 6 - nyhedsbrev */
 .sektion6 {
     background-color: #7D9A6C; /* Mørkegrøn*/
-    max-height: 60vh;
+    max-height: 50vh;
     width: 100%;
     align-items: center;
    
     text-align: center;
-    padding: 100px 64px;
+    padding: 80px 64px;
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
 
 }

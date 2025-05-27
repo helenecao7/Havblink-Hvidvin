@@ -82,7 +82,7 @@
 
 .btn-content {
     display: flex;
-    justify-content: left; /* Centrerer knapperne */
+    justify-content: left; 
     gap: 16px; /* Tilføjer mellemrum mellem knapperne */
     padding: 0px 80px; /* Tilføjer luft i bunden og venstre */ 
     flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
@@ -198,20 +198,21 @@
 }
 
 /* sektion4 - kendetegn */
+
 .sektion4 {
-    background-color: var(--tertiary-color); /* lys beige baggrund */
+    background-color: var(--tertiary-color); /* Lysere beige baggrund */
     
-    min-height: 70vh;
+    height: 100vh;
     width: 100%;
     
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 112px 120px;
-    gap: 2rem;
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+
 }
 
-.text-container {
+.container-sektion4 {
     display: flex;
     max-width: 1200px; /* Begrænser bredden af containeren */
     height: 100%;
@@ -219,8 +220,28 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 80px;
-    margin: 2rem 0; /* Tilføjer mellemrum over og under containeren */
   
+}
+
+.text-content4 {
+    justify-content: center;
+    text-align: center;
+}
+
+.text-content4 h1 {
+    margin-bottom: 0.5rem;
+}
+
+.content-images4 {
+    display: flex;
+    flex-direction: row; /* Gør at billederne er i en række */
+    gap: 48px; /* Tilføjer mellemrum mellem tekst og billede */
+
+}
+
+.image1 img, .image2 img, .image3 img {
+    max-width: 100%; /* Begrænser bredden af billederne */
+    height: 220px; /* Bevarer billedets proportioner */
 }
     
 /* sektion5 - nyheder */

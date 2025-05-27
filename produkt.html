@@ -74,7 +74,7 @@
                     <p> Shop alle > Kategori > <strong> Tør vine</strong></p>
                 </div>
 
-                <div class="container 1">
+                <div class="container1">
                     <div class="image-container">
                         <div class="image-column">
                             <img src="images/Produkter/hb øko3.jpg" alt="Billede af hvidvin" />
@@ -85,40 +85,51 @@
                         <div class="product-image">
                             <img src="images/Produkter/hb øko3.jpg" alt="Billede af hvidvin" />
                         </div>
+                    </div>
 
+                    <div class="text-container">
                         <div class="text-content1">
                             <h1> Havblink Økologisk</h1>
-                            <h2> DKK 79</h2>
+                            <h2 style="font-family: Lora;"> DKK 79</h2>
+                            <br>
                             <img src="images/Ikoner/Product Review2.svg" alt="produkt review"/>
-
-                            <p><strong>Beskrivelse:</strong></p>
-                            <p> Havblink Økologisk hvidvin præsenterer sig med en frisk og let bouquet - 12%<br>
-                                vol. - 75 cl, der vækker minder om danske somre ved kysten. Vinen åbner med<br>
-                                noter af grønne æbler, citrus og hvide blomster, der giver en sprød og livlig start.<br>
+                            <br>
+                            <br>
+                            <h4>Beskrivelse:</h4>
+                            <p> Havblink Økologisk hvidvin præsenterer sig med en frisk og let bouquet<br>
+                                - 12% vol. - 75 cl, der vækker minder om danske somre ved kysten.<br>
+                                Vinen åbner med noter af grønne æbler, citrus og hvide blomster,<br>
+                                der giver en sprød og livlig start.<br>
                                 <br>
-                                I munden opleves en fin balance mellem frugtsødme og syre, hvilket skaber<br>
-                                en elegant og forfriskende smagsprofil. Den økologiske dyrkning af druerne<br>
-                                skinner igennem i vinens rene og naturlige udtryk, med en mineralsk<br>
-                                afslutning og en let saltet nuance, der giver dybde og karakter. Perfekt som<br>
-                                aperitif eller til lette retter med fisk, skaldyr eller sommersalater.
+                                I munden opleves en fin balance mellem frugtsødme og syre, hvilket<br>
+                                skaber en elegant og forfriskende smagsprofil. Den økologiske dyrkning<br>
+                                af druerne skinner igennem i vinens rene og naturlige udtryk, med en<br>
+                                mineralsk afslutning og en let saltet nuance, der giver dybde og karakter.<br> 
+                                Perfekt som aperitif eller til lette retter med fisk, skaldyr eller sommersalater.<br>
                             </p>
-                        </div>
-
+                         </div>   
+                         <br>
                         <div class="button-container">
-                            <button class="btn-no-fill"> 1</button>
-                        </div>
-
-                        <div class="button-container2">
-                            <button class="btn-blue-long2"> Læg i kurv</button>
-                            <button class="btn-long"> Køb nu</button>
+                            <h4>Mængde</h4>
+                            <button class="btn-no-fill1"> 1</button>
+                        </div>    
+                        
+                            <div class="button-container2">
+                            <button class="btn-blue-long1"> Læg i kurv</button>
+                            <button id="btn-long"> Køb nu</button>
                             <p style="font-size:12px" class="small-txt"> Gratis fragt over DKK 500</p>
-                        </div>
+                            </div>
+                        
 
                         <div class="info">.....</div>
+                        
+                    </div>
                 </div>
+
+                       
             </section>
 
-        <!-- sektion2 - citat -->
+    <!-- sektion2 - citat -->
 
         <section class="sektion2">
             <div class="container-sektion2">
@@ -134,6 +145,45 @@
             </div>
         </section>
 
+    <!-- sektion3 - slider -->
+        <section class="sektion3">
+            <div class="container-sektion3">
+                <h1> Udforsk andre vine</h1>
+                <p> Oplev vores unikke udvalg af dansk hvidvin.</p>
+                <a href="vinoversigt.html" class="btn-blue"> Se alle</a>
+            </div>
+
+        </section>
+          
+
+
+
+
+
+
+
+
+    <!-- sektion4 - oplev hvidvin -->
+
+    <section class="sektion4">
+        <div class="image-container4">
+          <div class="sektion4-image">
+            <img src="images/høst.jpg" alt="høst arbejde" />
+          </div>
+        </div>
+
+        <div class="container-sektion4">
+            <h1 style="color: #fff;"> Oplev vores danske hvidvine</h1>
+            <p style="color: #fff;"> Tilføj en flaske til din kurv og nyd den friske smag af<br>
+              dansk hvidvin.
+            </p>
+            
+            <div class="btn-content1">
+            <a href="vinoversigt.html" class="btn-light"> Køb</a>
+            <a href="x" class="btn-no-fill"> Tilføj</a>
+            </div>
+        </div>
+      </section>
 
 
 
@@ -152,71 +202,6 @@
 
 
 
-/* sektion2 - items som er displayed i en "rullerække"*/
-.grid-sektion {
-    background-color: var(--tertiary-color); /* Lysere beige baggrund */
-    
-    min-height: 70vh;
-    width: 100%;
-    
-    align-items: center;
-    text-align: left;
-    padding: 112px 120px;
-    gap: 2rem;
-    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
-}
-
-.text-content2 {
-    display: flex;
-    flex-direction: column; /* Gør at teksten er i en kolonne */
-    align-items: left; /* Justerer teksten til venstre */
-    justify-content: center; /* Centrerer teksten vertikalt */
-    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
-}
-
-.grid-items1 {
-    display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række */
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
-}
-
-.grid-items2 {
-    display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række */
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne */
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items */
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item */
-}
-
-.item {
-    flex: 1; /* Gør at hvert grid item kan strække sig */
-    background-color: var(--tertiary-color); /* Mørkere beige baggrund */
-    padding: 20px; /* Tilføjer luft inden i grid item */
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge for dybde */
-    transition: transform 0.3s ease;
-
-}
-
-.item:hover {
-    transform: translateY(-5px); /* Giver en let hævning ved hover */
-}
-
-.item img {
-    width: 100%; /* Gør at billedet fylder hele bredden af grid item */
-    height: 400px; /* Bevarer billedets proportioner */
-    object-fit: cover; /* Sørger for, at billedet dækker hele området */
-    margin-bottom: 20px; /* Tilføjer mellemrum under billedet */
-}
-
-.container-sektion2 {
-    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */
-    display: flex;
-    
-    
-}
 
 
     </main>
