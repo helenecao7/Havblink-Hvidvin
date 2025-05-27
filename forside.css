@@ -15,7 +15,7 @@
     display: flex;
     position: relative;
     align-items: center; /* Centrerer indholdet vertikalt */
-    justify-content: left; /* Centrerer indholdet horisontalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
     overflow: hidden;
 
 } 
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: column; /* Gør containeren til en kolonne */
     
-    align-items: left; 
+    align-items: center; 
     justify-content: center; /* Centrerer indholdet vertikalt */
     align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
     padding: 112px 120px;/* Tilføjer luft i top og højre */
@@ -67,8 +67,7 @@
 
 .container-sektion1 h1 {
     line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
-    text-align: left;
-    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    text-align: center;
     margin-bottom: 0.5rem;;
 
     
@@ -76,15 +75,9 @@
 
 .container-sektion1 p {
     line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
-    text-align: left;
-    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    text-align: center;
     max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
 }
-
-.knap {
-    padding-left: 80px;
-}
-
 
 /* Sektion 2 */
 

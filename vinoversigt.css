@@ -37,10 +37,10 @@
     display: flex;
     flex-direction: column; /* Gør containeren til en kolonne */
     
-    align-items: left; 
+    align-items: center; 
     justify-content: center; /* Centrerer indholdet vertikalt */
     align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
-    padding: 112px 120px;/* Tilføjer luft i top og højre */
+    padding: 110px 120px;/* Tilføjer luft i top og højre */
     z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
     background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
 
@@ -48,8 +48,7 @@
 
 .container-sektion1 h1 {
     line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
-    text-align: left;
-    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    text-align: center;
     margin-bottom: 0.5rem;;
 
     
@@ -57,8 +56,7 @@
 
 .container-sektion1 p {
     line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
-    text-align: left;
-    padding-left: 80px; /* Tilføjer mellemrum til venstre */
+    text-align: center;
     max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
 }
 
@@ -82,9 +80,8 @@
 
 .btn-content {
     display: flex;
-    justify-content: left; 
-    gap: 16px; /* Tilføjer mellemrum mellem knapperne */
-    padding: 0px 80px; /* Tilføjer luft i bunden og venstre */ 
+    justify-content: center; 
+    gap: 16px; /* Tilføjer mellemrum mellem knapperne */ 
     flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
 }
 
