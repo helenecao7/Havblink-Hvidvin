@@ -239,32 +239,3 @@
   color: var(--text-color); /* #3C3D36 */
 }
 
-/* Buttons
-.buttons {
-    display: flex;
-    gap: 30px;
-    justify-content: left;
-    align-items: center;
-    margin: 2rem 15rem;
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens 
-
-}
-
-.btn-light {
-    padding: 12px 24px;
-    width: 130px;
-    text-decoration: none;
-    font-family: 'quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-color) !important;
-    background-color: #fff !important;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    text-align: center;
-    display: inline-block;
-    justify-content: left;
-}
-
-.btn-light:hover {
-    background-color: var(--accent-color2) !important;
-} */

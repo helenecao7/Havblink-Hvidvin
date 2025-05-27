@@ -10,14 +10,13 @@
 /* produkt sektion */
 
 .sektion1 {
-    min-height: 70vh;
     width: 100%;
     align-items: center;
     justify-content: center; 
-    height: 200vh;
+    height: 210vh;
 
     text-align: center;
-    padding-left: 130px; /* Tilføjer luft i top og højre */
+    padding-left: 150px; 
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
 
 } 
@@ -31,10 +30,10 @@
 
 .container1 {
     display: flex;
-    max-width: 1200px; /* Begrænser bredden af containeren */
+    max-width: 1200px;
     
     flex-direction: row; /* Gør at indholdet er i en række */
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px; /* Tilføjer mellemrum mellem tekst og billede */
 }
@@ -72,7 +71,6 @@
 
 .text-container {
     display: flex;
-    margin-top: 60px;
     flex-direction: column; 
     align-items: left; /* Centrerer teksten vertikalt */
     justify-content: left;
@@ -110,8 +108,29 @@
     gap: 16px;
 }
 
+.info {
+    display: flex;
+    flex-direction: column; /* Gør at teksten er i en kolonne */
+    align-items: left; /* Justerer teksten til venstre */
+    justify-content: center; /* Centrerer teksten vertikalt */
+    padding-top: 20px; /* Tilføjer luft i bunden og venstre */
+    text-align: left;
+}
 
+.titel-ikon {
+    display: flex;
+    flex-direction: row; /* Gør at ikonet og teksten er i en række */
+    align-items: center; /* Centrerer ikonet vertikalt */
+    justify-content: space-between;
+    margin-bottom: 10px; /* Tilføjer mellemrum under titlen */
+}
 
+.border-top {
+    border-top: 1px solid var(--text-color); /* Tilføjer en topkant */
+    width: 500px;
+    margin-top: 16px; /* Tilføjer mellemrum over kanten */
+    padding-top: 16px; /* Tilføjer luft under kanten */
+}
 
 
 /* sektion2 - citat */
@@ -278,70 +297,3 @@
 
 
 
-/* 
-
-/* sektion2 - items som er displayed i en "rullerække"
-.grid-sektion {
-    background-color: var(--tertiary-color); /* Lysere beige baggrund 
-    
-    min-height: 70vh;
-    width: 100%;
-    
-    align-items: center;
-    text-align: left;
-    padding: 112px 120px;
-    gap: 2rem;
-    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme
-}
-
-.text-content2 {
-    display: flex;
-    flex-direction: column; /* Gør at teksten er i en kolonne 
-    align-items: left; /* Justerer teksten til venstre 
-    justify-content: center; /* Centrerer teksten vertikalt 
-    padding: 0px 80px; /* Tilføjer luft i bunden og venstre 
-}
-
-.grid-items1 {
-    display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række 
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne 
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items 
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item 
-}
-
-.grid-items2 {
-    display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række 
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne 
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items 
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item 
-}
-
-.item {
-    flex: 1; /* Gør at hvert grid item kan strække sig 
-    background-color: var(--tertiary-color); /* Mørkere beige baggrund 
-    padding: 20px; /* Tilføjer luft inden i grid item 
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge for dybde 
-    transition: transform 0.3s ease;
-
-}
-
-.item:hover {
-    transform: translateY(-5px); /* Giver en let hævning ved hover 
-}
-
-.item img {
-    width: 100%; /* Gør at billedet fylder hele bredden af grid item 
-    height: 400px; /* Bevarer billedets proportioner 
-    object-fit: cover; /* Sørger for, at billedet dækker hele området 
-    margin-bottom: 20px; /* Tilføjer mellemrum under billedet 
-}
-
-.container-sektion2
-    padding: 0px 80px; /* Tilføjer luft i bunden og venstre 
-    display: flex;
-    
-    
-} */

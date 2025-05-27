@@ -144,15 +144,6 @@
 }
 
 
-
-/* .grid-items2 {
-    display: flex;
-    flex-direction: row; /* Gør at indholdet er i en række 
-    justify-content: space-between; /* Fordeler pladsen mellem elementerne 
-    margin-bottom: 0px; /* Tilføjer mellemrum mellem grid items 
-    gap: 20px; /* Tilføjer mellemrum mellem elementerne i grid item 
-} */
-
 /* sektion3 - smagsnuancer */
 .sektion3 {
     background-color: var(--primary-color); /* beige baggrund */
@@ -271,7 +262,6 @@
     justify-content: space-between; /* Fordeler pladsen mellem elementerne */
     gap: 20px; /* Tilføjer mellemrum mellem elementerne*/
 }
-
 
 
 
