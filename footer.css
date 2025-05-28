@@ -4,7 +4,7 @@
     background-color: var(--primary-color); /* Beige baggrundsfarve */
     color: var(--text-color); /* Mørkegrå tekstfarve */
     padding: 2rem; /* Tilføjer polstring omkring footer */
-    min-height: 80vh;
+    height: 80vh;
     width: 100%;
 
     justify-content: space-between; /* Fordeler indholdet jævnt */
@@ -16,19 +16,27 @@
 
 .footer-container {
     display: flex; /* Gør footer-containeren til en flex-container */
-    flex-direction: column; /* Arrangerer indholdet i en kolonne */
+    flex-direction: row; /* Arrangerer indholdet i en kolonne */
     justify-content: space-between; /* Fordeler indholdet jævnt */
     align-items: left;
     text-align: left; /* Centrerer teksten */
+    padding-bottom: 6rem;
 
 }
 
 .kontakt-info {
     display: flex; /* Gør kontakt-info til en flex-container */
     flex-direction: column; /* Arrangerer indholdet i en kolonne */
-    align-items: left; 
+    align-items: flex-start; 
     text-align: left; 
     padding: 0.5rem 0; /* Tilføjer lidt polstring omkring kontakt-info */
+}
+
+.icon {
+    display: flex; /* Gør ikonerne til en flex-container */
+    flex-direction: row; !important;
+    align-items: center; 
+    gap: 2rem; /* Tilføjer mellemrum mellem ikonerne og teksten */
 }
 
 .social-media {
@@ -42,7 +50,42 @@
 }
 
 .logo1 img {
-    height: 75px; /* Juster højden på logoet */
+    height: 70px; /* Juster højden på logoet */
     display: block; /* Sørger for at billedet ikke har ekstra plads omkring sig */
 
+}
+
+.footer-links-column {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-links-column ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.footer-links-column li {
+    margin-bottom: 1rem; /* Tilføjer lidt mellemrum mellem links */
+}
+
+.footer-links-column a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px; /* Justerer skriftstørrelsen */
+    font-weight: 500;
+}
+
+.footer-links-column a:hover {
+    text-decoration: underline; /* Understreger links ved hover */
+}
+
+.rettigheder {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--text-color); /* Tilføjer en linje over rettigheder */
+    padding-top: 1rem; /* Tilføjer lidt polstring over rettigheder */
 }
