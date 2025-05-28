@@ -29,11 +29,13 @@ header {
 
 .navbar-menu {
     display: flex;
+    max-width: 1200px;
+    width: 100%;
     align-items: center; /* Centrerer links vertikalt */
-    flex-grow 1; /* Giver nav plads til at vokse */
     justify-content: space-between; /* Justerer links til højre */
+
     padding: 0;
-    margin: 0; /* Fjerner standard margin og padding */
+    margin: 0 auto;
     list-style: none; /* Fjerner punkttegn fra listen */
     position; relative; /* For at dropdown-menuen kan positioneres korrekt */
 }
@@ -42,12 +44,12 @@ header {
     position: relative; /* For at dropdown-menuen kan positioneres korrekt */
   }
 
-  .navbar-menu a {
-    text-decoration: none; /* Fjerner understregning */
-    color: var(--text-color); /* Mørkegrå farve for bedre kontrast */
-    font-size: 16px; /* Justerer skriftstørrelsen */
-    padding: 8px 15px; /* Tilføjer lidt polstring omkring links */
-    display: block; /* Gør links til blokke for bedre klikbarhed */
+.navbar-menu a {
+   text-decoration: none; /* Fjerner understregning */
+   color: var(--text-color); /* Mørkegrå farve for bedre kontrast */
+   font-size: 16px; /* Justerer skriftstørrelsen */
+   padding: 8px 15px; /* Tilføjer lidt polstring omkring links */
+   display: block; /* Gør links til blokke for bedre klikbarhed */
   }
 
   .icons img {
@@ -64,9 +66,9 @@ header {
     color:#333D36;
     align-items: center; /* Centrerer ikonerne vertikalt */
     gap: 1rem; /* Tilføjer mellemrum mellem ikonerne */
-    margin-right: 1rem; /* Placerer ikonerne til højre */
 
   }
+
 
 /* dropdown menu styles */
 .dropdown-menu {
@@ -74,7 +76,11 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #f9f6e7;
+  margin: 0;
+  list-style: none;
+
+  background-color: var(--primary-color); /* Beige baggrundsfarve */
+  color: var(--text-color); /* Mørkegrå farve for bedre kontrast */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 10px 0;
   z-index: 1000;
@@ -93,6 +99,11 @@ header {
   display: block;
 }
 
+.dropdown-arrow {
+  margin-left: 0.2rem;
+  vertical-align: middle;
+  height: 0.5rem;
+}
 
 /* Burger menu styles */
 .burger-toggle {
@@ -110,7 +121,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 2rem 0rem;
   align-items: center;
@@ -121,7 +132,6 @@ header {
   color: var(--text-color); /* mørkegrå #3C3D36 */
   font-weight: 500;
   font-size: 16px;
-  text-transform: capitalize;
   position: relative;
   transition: color 0.3s ease;
   gap: 1rem; /* Tilføjer mellemrum mellem links */
@@ -131,6 +141,7 @@ header {
   color: var(--primary-color); /* Beige */
   font-weight: bold; /* Gør den aktive link mere fremtrædende */
 }
+
 .nav-links li a::after {
   content: '';
   position: absolute;
