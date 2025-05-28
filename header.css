@@ -1,7 +1,7 @@
 /* header.css*/
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Beige baggrundsfarve */
     height: 70px; /* Fast højde for headeren */
     padding: 1rem;
     display: flex;
@@ -27,15 +27,30 @@ header {
 
 }
 
-nav {
+.navbar-menu {
     display: flex;
     align-items: center; /* Centrerer links vertikalt */
     flex-grow 1; /* Giver nav plads til at vokse */
     justify-content: space-between; /* Justerer links til højre */
-    padding: 10px 30px; /* Tilføjer lidt polstring omkring links */
+    padding: 0;
+    margin: 0; /* Fjerner standard margin og padding */
+    list-style: none; /* Fjerner punkttegn fra listen */
+    position; relative; /* For at dropdown-menuen kan positioneres korrekt */
 }
 
-  .icons svg {
+.navbar-menu li {
+    position: relative; /* For at dropdown-menuen kan positioneres korrekt */
+  }
+
+  .navbar-menu a {
+    text-decoration: none; /* Fjerner understregning */
+    color: var(--text-color); /* Mørkegrå farve for bedre kontrast */
+    font-size: 16px; /* Justerer skriftstørrelsen */
+    padding: 8px 15px; /* Tilføjer lidt polstring omkring links */
+    display: block; /* Gør links til blokke for bedre klikbarhed */
+  }
+
+  .icons img {
     display: flex; 
     width: 24px; /* Justerer ikonstørrelsen */
     height: 24px;
@@ -46,22 +61,48 @@ nav {
 
   .icons {
     display: flex;
+    color:#333D36;
     align-items: center; /* Centrerer ikonerne vertikalt */
     gap: 1rem; /* Tilføjer mellemrum mellem ikonerne */
     margin-right: 1rem; /* Placerer ikonerne til højre */
 
   }
 
-/*Burgermenu*/
+/* dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f6e7;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  z-index: 1000;
+  min-width: 150px;
+}
 
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 8px 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* Burger menu styles */
 .burger-toggle {
   display: none;
 }
 
 .burger-label {
-  display: none; /* Skjuler burgerikonet som standard */
+  display: none; /* Skjuler burgerikonet som standard*/
   font-size: 1.5rem;
-  color: #3C3D36; /* Mørkegrå farve for bedre kontrast */
+  color: #3C3D36; /* Mørkegrå farve for bedre kontrast*/
   cursor: pointer;
   margin-bottom: 1rem; /* Placerer burgerikonet til venstre*/
 }
@@ -69,7 +110,7 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 2rem 0rem;
   align-items: center;
@@ -79,111 +120,32 @@ nav {
   text-decoration: none;
   color: var(--text-color); /* mørkegrå #3C3D36 */
   font-weight: 500;
-  font-size: 18px;
-  text-transform: uppercase;
+  font-size: 16px;
+  text-transform: capitalize;
   position: relative;
   transition: color 0.3s ease;
+  gap: 1rem; /* Tilføjer mellemrum mellem links */
 }
 
 .nav-links li a.active {
-  color: var(--primary-color); /* Beige #F8F5E2 */
+  color: var(--primary-color); /* Beige */
+  font-weight: bold; /* Gør den aktive link mere fremtrædende */
 }
-
 .nav-links li a::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: var(--light-color); /* Beige #F1E9DE */
+  background-color: var(--primary-color); 
   bottom: -4px;
   left: 0;
   transition: width 0.3s ease;
 }
-
 .nav-links li a:hover::after,
 .nav-links li a.active::after {
   width: 100%;
 }
-
 .nav-links li a:hover {
-  color: var(--accent-color2); /* gul #FCF0BC */
+  color: var(--accent-color1); 
 }
 
-
-
-/* Burgermenu til mobil */
-@media (max-width: 768px) {
-  header {
-    justify-content: space-between;
-    align-items: center;
-  } 
-}
-
-  .logo {
-    justify-content: center; /* Centrerer logoet horisontalt */
-    align-items: center; /* Centerer logoet vertikalt */
-  }
-
-  nav {
-    flex-grow: 0; /* Giver nav en fast bredde */
-    justify-content: flex-start; /* Justerer links til venstre */
-  }
-
-  .burger-label {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary-color); /* #F8F5E2 */
-    flex-direction: column;
-    padding: 1rem;
-    z-index: 999;
-  }
-
-  .burger-toggle:checked ~ .nav-links {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
-
-  .nav-links li a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    text-transform:capitalize;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-
-  .nav-links li a.active {
-    color: var(--accent-color2); 
-  }
-
-  .nav-links li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color1); 
-    bottom: -4px;
-    left: 0;
-    transition: width 0.3s ease;
-  }
-
-  .nav-links li a:hover::after,
-  .nav-links li a.active::after {
-    width: 100%;
-  }
-
-  .nav-links li a:hover {
-    color: var(--accent-color1); /* Himmel blå #769DC0 */
-  }

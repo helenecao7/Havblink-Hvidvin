@@ -1,1 +1,48 @@
 /* footer.css*/
+
+.footer-section {
+    background-color: var(--primary-color); /* Beige baggrundsfarve */
+    color: var(--text-color); /* Mørkegrå tekstfarve */
+    padding: 2rem; /* Tilføjer polstring omkring footer */
+    min-height: 80vh;
+    width: 100%;
+
+    justify-content: space-between; /* Fordeler indholdet jævnt */
+    align-items: center;
+    padding: 112px 120px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+}
+
+.footer-container {
+    display: flex; /* Gør footer-containeren til en flex-container */
+    flex-direction: column; /* Arrangerer indholdet i en kolonne */
+    justify-content: space-between; /* Fordeler indholdet jævnt */
+    align-items: left;
+    text-align: left; /* Centrerer teksten */
+
+}
+
+.kontakt-info {
+    display: flex; /* Gør kontakt-info til en flex-container */
+    flex-direction: column; /* Arrangerer indholdet i en kolonne */
+    align-items: left; 
+    text-align: left; 
+    padding: 0.5rem 0; /* Tilføjer lidt polstring omkring kontakt-info */
+}
+
+.social-media {
+    padding-top: 1rem; 
+}
+
+.logo1 {
+    align-items: center; /* Centrerer logoet vertikalt */
+    padding-bottom: 2rem; /* Tilføjer lidt polstring omkring logoet */
+
+}
+
+.logo1 img {
+    height: 75px; /* Juster højden på logoet */
+    display: block; /* Sørger for at billedet ikke har ekstra plads omkring sig */
+
+}
