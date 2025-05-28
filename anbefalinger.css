@@ -253,3 +253,127 @@
     flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
 
 }
+
+/* sektion 6 - anmeldelser */
+.sektion6 {
+    background-color: var(--tertiary-color); 
+    min-height: 80vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
+    padding: 112px 120px;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+}
+
+.text-content6 {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    text-align: left;;
+    justify-content: flex-start;
+}
+
+.container-sektion6 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: left; /
+    justify-content: flex-start;
+    padding-left: 80px;
+
+}
+
+.content-images6 {
+    display: flex;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: center;
+    gap: 50px;     
+    margin-top: 4rem;
+
+}
+
+.review img {
+    height: 200px;
+}
+
+/* sektion7 - køb hvidvin */
+.sektion7 {
+    height: 60vh; /* Gør sektionen fuld højde */;
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+
+} 
+
+.image-container7 {
+    position: absolute; /* Gør at billedet kan placeres bag teksten */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
+}
+
+
+.container-sektion7 {
+    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
+    height: 60vh;
+    width: 100%;
+    left: 0%; /* Justerer containeren til venstre */
+    display: flex;
+    flex-direction: column; /* Gør containeren til en kolonne */
+    
+    align-items: center; 
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
+    padding: 112px 120px;/* Tilføjer luft i top og højre */
+    z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
+    background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
+
+}
+
+.container-sektion7 h1 {
+    line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: center;
+    margin-bottom: 0.5rem;;
+
+    
+}
+
+.container-sektion7 p {
+    line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: center;
+    max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
+}
+
+
+.sektion7-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sektion7-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    display: block; /* Fjerner eventuelle mellemrum under billedet */
+}
+
+.btn-content1 {
+    display: flex;
+    justify-content: center; /* Centrerer knapperne */
+    gap: 16px; /* Tilføjer mellemrum mellem knapperne */
+    flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
+}
+
+
+/* Responsiv design */
