@@ -1,0 +1,391 @@
+/* anbefalinger.css */
+
+/* Generelle stilarter */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hero sektion */
+.sektion1 {
+    height: 90vh; 
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: left; /* Centrerer indholdet horisontalt */
+    overflow: hidden;  
+    background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
+
+} 
+
+.image-container {
+    position: absolute; /* Gør at billedet kan placeres bag teksten */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
+}
+
+
+.container-sektion1 {
+    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
+    height: 90vh;
+    width: 100%;
+    left: 0%; /* Justerer containeren til venstre */
+    display: flex;
+    flex-direction: column; /* Gør containeren til en kolonne */
+    
+    align-items: left; 
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
+    padding: 112px 120px;/* Tilføjer luft i top og højre */
+    z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
+  
+
+}
+
+.container-sektion1 h1 {
+    line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: center;
+    margin-bottom: 0.5rem;;
+
+    
+}
+
+.container-sektion1 p {
+    line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: center;
+}
+
+
+.sektion1-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sektion1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    display: block; /* Fjerner eventuelle mellemrum under billedet */
+}
+
+.btn-content {
+    display: flex;
+    justify-content: center; 
+    gap: 16px; /* Tilføjer mellemrum mellem knapperne */
+    padding: 0px 80px; 
+    flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
+}
+
+/* sektion2 - vinparringer*/
+.sektion2 {
+    background-color: var(--tertiary-color); /* Lysere beige baggrund */
+    
+    min-height: 70vh;
+    width: 100%;
+    
+    align-items: center;
+    text-align: center;
+    padding: 112px 120px;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+
+}
+
+.container-sektion2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.text-content2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.content-images2 {
+    display: flex;
+    flex-direction: row; /* Gør at billederne er i en række */
+    align-items: flex-start;
+    justify-content: center; /* Centrerer billederne horisontalt */
+    gap: 48px; /* Tilføjer mellemrum mellem tekst og billede */
+}
+
+.image img {
+    max-width: 100%; /* Begrænser bredden af billederne */
+    height: 70px; /* Bevarer billedets proportioner */
+}
+
+.btn-no-stroke {
+    justify-content: center;
+
+}
+
+/* sektion3 - fisk og skaldyr */
+.sektion3 {
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
+    padding: 112px 112px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+}
+
+.container-sektion3 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 70vh;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 80px;
+    gap: 80px; 
+}
+
+.img-content3 {
+    flex: 1; /* Gør at billedet kan strække sig */
+
+}
+
+.img-content3 img {
+    max-width: 100%; /* Begrænser bredden af billedet */ 
+    height: 500px; /* Bevarer billedets proportioner */
+  
+}
+
+.text-content3 {
+    display: column;
+    text-align: left; /* Justerer tekst til venstre */
+    margin: 1rem 0rem;   
+}
+
+.text-content3 h1 {
+    margin-bottom: 0.5rem;
+    line-height: 60px;
+
+}
+
+/* sektion4 - kylling og svinekød*/
+.sektion4 {
+    background-color: var(--tertiary-color); /* Lysere beige baggrund */
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
+    padding: 112px 112px;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.container-sektion4 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    height: 70vh;
+    flex-direction: row; /* Gør at indholdet er i en række */
+    align-items: center;
+    gap: 60px; 
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.imag-content4 {
+    flex: 1; /* Gør at billedet kan strække sig */
+
+}
+
+.img-content3 img {
+    max-width: 100%; /* Begrænser bredden af billedet */ 
+    height: 500px; /* Bevarer billedets proportioner */
+  
+}
+
+.text-content4{
+    display: column;
+    text-align: left; /* Justerer tekst til venstre */
+    flex: 1; /* Gør at tekstindholdet kan strække sig */
+    padding-left: 4rem; /* Tilføjer luft omkring teksten */
+}
+
+.row-text {
+    display: flex;
+    flex-direction: row; /* Gør at teksten er i en række */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boks {
+    display: flex;
+    flex-direction: column; /* Gør at teksten er i en kolonne */
+}
+
+.text-content4 h1 {
+    margin-bottom: 0.5rem;
+    line-height: 60px;
+
+}
+
+/* sektion5 - ost og dessert*/
+.sektion5 {
+    min-height: 70vh;
+    width: 100%;
+    align-items: center;
+   
+    text-align: center;
+    padding: 112px 125px;
+    gap: 2rem;
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+}
+
+/* sektion6 - banner køb */
+.sektion6 {
+    height: 60vh; 
+    display: flex;
+    position: relative;
+    align-items: center; /* Centrerer indholdet vertikalt */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+
+} 
+
+.image-container6 {
+    position: absolute; /* Gør at billedet kan placeres bag teksten */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Skjuler eventuelle overflødige dele af billedet */
+}
+
+
+.container-sektion6 {
+    position: relative; /* Gør at containeren kan placeres ovenpå billedet */
+    height: 60vh;
+    width: 100%;
+    left: 0%; /* Justerer containeren til venstre */
+    display: flex;
+    flex-direction: column; /* Gør containeren til en kolonne */
+    
+    align-items: center; 
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-self: stretch; /* Gør at containeren strækker sig over hele bredden */
+    padding: 112px 120px;/* Tilføjer luft i top og højre */
+    z-index: 2; /* Sørger for at containeren er ovenpå baggrundsbilledet */
+    background-color: rgba(0, 0, 0, 0.5); /* lys grå med let gennemsigtighed */
+
+}
+
+.container-sektion6 h1 {
+    line-height: 60px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: center;
+    margin-bottom: 0.5rem;;
+
+    
+}
+
+.container-sektion6 p {
+    line-height: 30px; /* Justerer linjehøjden for bedre læsbarhed */
+    text-align: center;
+    max-width: 800px; /* Begrænser bredden af teksten for bedre læsbarhed */
+}
+
+
+.sektion6-image {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sektion6-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sørger for, at billedet dækker hele området */
+    display: block; /* Fjerner eventuelle mellemrum under billedet */
+}
+
+.btn-content1 {
+    display: flex;
+    justify-content: center; /* Centrerer knapperne */
+    gap: 16px; /* Tilføjer mellemrum mellem knapperne */
+    flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
+}
+
+/* sektion7 - FAQ */
+.sektion7 {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    height: 170vh;
+
+    text-align: center;
+    padding: 112px 112px; 
+    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme */
+
+} 
+
+.container-sektion7 {
+    display: flex;
+    max-width: 1200px; /* Begrænser bredden af containeren */
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.text-content7{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column; /* Gør at teksten er i en kolonne */
+    align-items: left; /* Justerer teksten til venstre */
+    justify-content: center; /* Centrerer teksten vertikalt */
+    padding-top: 20px; /* Tilføjer luft i bunden og venstre */
+    text-align: left;
+}
+
+.titel-ikon {
+    display: flex;
+    flex-direction: row; /* Gør at ikonet og teksten er i en række */
+    align-items: center; /* Centrerer ikonet vertikalt */
+    justify-content: space-between;
+    margin-bottom: 10px; /* Tilføjer mellemrum under titlen */
+}
+
+.border-top {
+    border-top: 1px solid var(--text-color); /* Tilføjer en topkant */
+    width: 600px;
+    margin-top: 16px; /* Tilføjer mellemrum over kanten */
+    padding-top: 16px; /* Tilføjer luft under kanten */
+}
+
+.spørgsmål {
+   padding-top: 4rem;
+}
+
+
+/* Responsiv design */

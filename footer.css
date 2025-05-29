@@ -3,33 +3,33 @@
 .footer-section {
     background-color: var(--primary-color); /* Beige baggrundsfarve */
     color: var(--text-color); /* Mørkegrå tekstfarve */
-    padding: 2rem; /* Tilføjer polstring omkring footer */
+    padding: 2rem; 
     height: 80vh;
     width: 100%;
 
-    justify-content: space-between; /* Fordeler indholdet jævnt */
+    justify-content: space-between; 
     align-items: center;
     padding: 112px 120px;
     gap: 2rem;
-    flex-wrap: wrap; /* indholdet kan tilpasse sig mindre skærme*/
+    flex-wrap: wrap; 
 }
 
 .footer-container {
-    display: flex; /* Gør footer-containeren til en flex-container */
-    flex-direction: row; /* Arrangerer indholdet i en kolonne */
+    display: flex; 
+    flex-direction: row; 
     justify-content: space-between; /* Fordeler indholdet jævnt */
     align-items: left;
-    text-align: left; /* Centrerer teksten */
+    text-align: left;
     padding-bottom: 6rem;
 
 }
 
 .kontakt-info {
-    display: flex; /* Gør kontakt-info til en flex-container */
-    flex-direction: column; /* Arrangerer indholdet i en kolonne */
+    display: flex; 
+    flex-direction: column;
     align-items: flex-start; 
     text-align: left; 
-    padding: 0.5rem 0; /* Tilføjer lidt polstring omkring kontakt-info */
+    padding: 0.5rem 0; 
 }
 
 .icon {
