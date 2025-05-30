@@ -83,6 +83,12 @@
     flex: 1; /* Gør at tekstindholdet kan strække sig */
 }
 
+.text-content1 p {
+  max-width: 500px;   /* God bredde på desktop */
+  margin: 0;
+  line-height: 1.6;
+}
+
 .button-container {
     display: flex;
     justify-content: left; /* Centrerer knapperne */
@@ -293,6 +299,131 @@
     gap: 16px; /* Tilføjer mellemrum mellem knapperne */
     padding: 0px 80px; /* Tilføjer luft i bunden og venstre */ 
     flex-wrap: wrap; /* Gør at knapperne kan brydes til næste linje, hvis der ikke er plads */
+}
+
+/* Responsive design */
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+  
+h2 {
+    font-size: 20px;
+  }
+  
+p, ul, li, a {
+    font-size: 16px;
+  }
+  
+.sektion1 {
+    padding-left: 0;
+    height: auto;
+    padding: 1rem 3rem;
+
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    align-items: center;
+  }
+
+.image-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.image-column {
+    flex-direction: row;
+    justify-content: left;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 1rem;
+  }
+
+.image-column img {
+    height: 80px;
+    width: 100%;
+  }
+
+.product-image {
+    width: 100%
+}
+
+.product-image img {
+    height: 550px;
+    width: 100%;
+  }
+
+.text-container {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+.button-container,
+.button-container2 {
+    align-items: flex-start;
+    justify-content: left;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .btn-blue-long1, #btn-long {
+    max-width: 500px;
+    width: 100%;
+  }
+
+.btn-content1 {
+    flex-direction: row;
+    gap: 8px;
+    padding: 0 1rem;
+    justify-content: center;
+  }
+
+.container-sektion3 {
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.grid-items1 {
+    grid-template-columns: 1fr; /* Én kolonne på mobil */
+    gap: 1.5rem;
+  }
+
+.container-sektion4 {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+.sektion4 {
+    display: flex;
+    align-items: flex-start;
+    min-height: 60vh;
+    text-align: left;
+  }
+  
+
+.container-sektion4 h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+.container-sektion4 p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 100%;
+  }
 }
 
 
